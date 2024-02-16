@@ -38,7 +38,7 @@ lines(x = x, y = dnorm(x, media, desv_est), col = 2, lwd = 2)
 
 
 # Distribución uniforme ---------------------------------------------------
-
+# ctrl+ shift + r para un titilo como arriba
 
 tamano_muestral <- 7000
 a <- 3
