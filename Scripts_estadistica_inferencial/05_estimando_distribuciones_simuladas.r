@@ -7,7 +7,7 @@
 # Kernel ------------------------------------------------------------------
 
 
-# Distribución normal -----------------------------------------------------
+# Distribuci?n normal -----------------------------------------------------
 
 tamano_muestral <- 100
 media <- 5
@@ -27,17 +27,14 @@ lines(x = x, y = dnorm(x, media, desv), col = 2, lwd = 2)
 plot(estimador_kernel)
 for(i in seq_len(iteraciones)){
   Y <- rnorm(tamano_muestral, media, desv)
-  
   estimador_kernel <- density(Y)
-  
   lines(estimador_kernel)
-  
 }
 lines(x = x, y = dnorm(x, media, desv), col = 2, lwd = 2)
 
 
 
-# Distribución uniforme ---------------------------------------------------
+# Distribuci?n uniforme ---------------------------------------------------
 
 
 tamano_muestral <- 100
@@ -71,7 +68,7 @@ lines(x = x, y = dunif(x, a, b), col = 2, lwd = 2)
 
 # ECDF --------------------------------------------------------------------
 
-# distribución normal -----------------------------------------------------
+# distribuci?n normal -----------------------------------------------------
 
 
 tamano_muestral <- 100
@@ -100,7 +97,7 @@ lines(x = x, y = pnorm(x, media, desv), col = 2, lwd = 2)
 
 
 
-# Distribución uniforme ---------------------------------------------------
+# Distribuci?n uniforme ---------------------------------------------------
 
 tamano_muestral <- 1000
 a <- 2
