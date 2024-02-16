@@ -1,9 +1,9 @@
 
-# En el espacio de parámetros podemos ver los parámetros y los int --------
+# En el espacio de par?metros podemos ver los par?metros y los int --------
 
 # intervalos de confianza de la media -------------------------------------
 
-tamano_muestral <- 35
+tamano_muestral <- 350  #35
 iteraciones <- 100
 media_poblacional_A <- 5
 media_poblacional_B <- 3
@@ -36,4 +36,3 @@ for(i in seq_len(iteraciones)){
 
 abline(0,1, col = 2)
 points(media_poblacional_A, media_poblacional_B, col = 4, pch = 20, cex = 3)
-
