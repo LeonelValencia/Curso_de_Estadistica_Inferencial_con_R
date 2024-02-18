@@ -18,7 +18,7 @@ genera_y <- function(x, beta_0, beta_1){
 }
 
 #los datos se vuelven fijos para el ejercicio
-datos_x <- geno_muestral)
+datos_x <- genera_x(tamano_muestral)
 datos_y <- genera_y(datos_x, beta_0, beta_1)
 
 #hacemos la regresion con lm (linear model)
@@ -28,10 +28,8 @@ coefficients(modelo) -> coeficientes_muestrales
 # obtenemos intervalos de confianza con confint
 confint(modelo)
 
-
 #inicializamos vectores
 beta_0_estimado <- beta_1_estimado <- vector()
-
 
 for(i in seq_len(iteraciones)){
   # Tomamos una muesta con sample(numeros, tamaño, reemplazo(datos repetidos)
@@ -54,7 +52,6 @@ for(i in seq_len(iteraciones)){
   beta_0_estimado[i] <- coeficientes[1]
   beta_1_estimado[i] <- coeficientes[2]
 }
-
 
 # Creamos un DataFrame con los datos
 
@@ -79,19 +76,3 @@ rect(
   intervalo_bootstrapping$beta_0[2],
   intervalo_bootstrapping$beta_1[2],
   border = 4, lwd = 2)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
