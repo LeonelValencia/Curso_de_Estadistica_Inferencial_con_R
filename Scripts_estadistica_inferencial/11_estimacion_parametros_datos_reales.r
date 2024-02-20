@@ -12,10 +12,12 @@
 
 
 # install.packages("devtools")
-# devtools::install_github("nebulae-co/saber")
+# install.packages("devtools", type = "binary")
+# devtools::install_github("nebulae-co/saber", force=T)
+install.packages("C:/Users/VALENCIA/Documents/R/nebulae-co-saber-04cded4.tar.gz", lib = "C:/Users/VALENCIA/AppData/Local/R/win-library/4.3", repos = NULL)
+install.packages("C:/Users/VALENCIA/Documents/R/nebulae-co-saber-04cded4.tar.gz", repos = NULL, type = "source")
 
 library("saber")
-
 
 # carga de datos ----------------------------------------------------------
 # data("SB11_20111") # 31707
