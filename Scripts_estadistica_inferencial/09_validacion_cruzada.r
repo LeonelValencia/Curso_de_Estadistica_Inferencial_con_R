@@ -5,7 +5,6 @@
 #install.packages("nnet")
 #install.packages("parallel")
 
-
 # Paquetes ----------------------------------------------------------------
 
 library("caret")
@@ -35,9 +34,7 @@ rmse_fold <- function(pliegue, form, datos,  nn_size){
 }
 
 
-
 # Red neuronal ------------------------------------------------------------
-
 
 n_pliegues <- 20
 tamano_muestral <-300
@@ -86,18 +83,3 @@ mean(rmse_pliegues)
 # graficamos
 plot(rmse_pliegues, ylim = c(0, 1))
 abline(h = mean(rmse_pliegues), col = 2, lwd = 4)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
